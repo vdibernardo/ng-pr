@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "tan-meringue";
+  src:
+    url("fonts/tan-meringue-webfont.woff2") format("woff2"),
+    url("fonts/tan-meringue-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "area-normal", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "tan-meringue", sans-serif;
+}
