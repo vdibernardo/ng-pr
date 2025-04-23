@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="scripts/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/ffz1kqp.css">
   <body class="bg-indigo-50">
-    <nav class="flex items-center h-22 border-b border-purple-300">
+    <nav id="nav" class="flex items-center h-22 border-b border-purple-300">
       <div class="flex flex-grow justify-between items-center px-14">
         <div class="flex items-center h-6 w-auto">
             <h2 class="text-center text-orange-600 text-2xl">NGPR</h2>
@@ -379,7 +379,11 @@
       >
         <h2 class="text-center text-orange-600 text-4xl/12 lg:text-5xl/15 xl:text-5xl/17">LOVE LETTERS</h2>
 
-        <div class="flex flex-wrap items-center justify-center gap-8">
+        <div class="flex flex-wrap items-start justify-center gap-8 relative mx-30">
+            <img src="images/FISH.png" class="absolute -top-55 -right-70 h-80" />
+            <img src="images/JAM.png" class="absolute top-30 -left-78 h-105" />
+            <img src="images/CUP.png" class="absolute bottom-55 -right-80 h-70" />
+            <img src="images/OLIVEOIL.png" class="absolute -bottom-70 -left-60 h-120" />
           <div class="flex flex-col gap-8">
             <div
               id="becca-millstein"
@@ -460,6 +464,9 @@
         id="lets_chat"
         class="flex flex-col items-center justify-center py-20 px-14 gap-10"
       >
+        <div class="flex items-center justify-center w-24 y-24">
+            <img src="images/lets-chat.svg">
+        </div>
         <h2 class="text-center text-indigo-600 text-4xl/12 lg:text-5xl/15 xl:text-5xl/17">LET'S CHAT ABOUT</h2>
         <div class="flex flex-col justify-center items-center gap-3 text-center text-2xl font-light text-slate-900">
             <p>communications strategy</p>
@@ -471,8 +478,22 @@
             <p>press kit creation</p>
             <p>consulting</p>
         </div>
+        <div class="flex items-center justify-center gap-5">
+            <div class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900">
+                <img src="images/email.svg" alt="email" class="h-6 w-6">
+            </div>
+            <div class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900">
+                <img src="images/linkedin.svg" alt="linkedin" class="h-6 w-6">
+            </div>
+            <div class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900">
+                <img src="images/instagram.svg" alt="email" class="h-6 w-6">
+            </div>
+        </div>
       </div>
 
     </main>
+    <footer class="flex items-center justify-center h-40 bg-indigo-700">
+        <a href="#nav" class="text-purple-200">back to top</a>
+    </footer>
   </body>
 </html>
