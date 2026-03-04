@@ -8,18 +8,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" type="text/css" href="scripts/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/ffz1kqp.css">
+  </head>
   <body class="bg-indigo-50">
-    <nav id="nav" class="flex items-center h-22 border-b border-purple-300">
-      <div class="flex flex-grow sm:justify-between justify-center items-center px-14">
+    <nav id="nav" class="relative border-b border-purple-300">
+      <div class="flex h-22 flex-grow sm:justify-between justify-between items-center px-6 sm:px-14">
         <div class="flex items-center h-6 w-auto">
             <h2 class="text-center text-orange-600 text-2xl">NGPR</h2>
         </div>
-        <ul id="nav_links" class="hidden sm:flex justify-end gap-12 text-lg font-light">
+        <button id="hamburger" onclick="var m=document.getElementById('mobile_menu');m.classList.toggle('hidden');m.classList.toggle('flex')" class="sm:hidden flex flex-col justify-center gap-1.5 cursor-pointer w-8 h-8">
+          <span class="block w-6 h-0.5 bg-indigo-500"></span>
+          <span class="block w-6 h-0.5 bg-indigo-500"></span>
+          <span class="block w-6 h-0.5 bg-indigo-500"></span>
+        </button>
+        <ul class="hidden sm:flex justify-end gap-12 text-lg font-light">
           <li><a href="#extra_extra" class="text-indigo-500">press</a></li>
           <li><a href="#love_letters" class="text-indigo-500">testimonials</a></li>
           <li><a href="#lets_chat" class="text-indigo-500">contact</a></li>
         </ul>
       </div>
+      <ul id="mobile_menu" class="hidden flex-col items-center gap-6 py-6 text-lg font-light border-t border-purple-300 bg-indigo-50">
+        <li><a href="#extra_extra" class="text-indigo-500" onclick="var m=document.getElementById('mobile_menu');m.classList.add('hidden');m.classList.remove('flex')">press</a></li>
+        <li><a href="#love_letters" class="text-indigo-500" onclick="var m=document.getElementById('mobile_menu');m.classList.add('hidden');m.classList.remove('flex')">testimonials</a></li>
+        <li><a href="#lets_chat" class="text-indigo-500" onclick="var m=document.getElementById('mobile_menu');m.classList.add('hidden');m.classList.remove('flex')">contact</a></li>
+      </ul>
     </nav>
     <main id="main">
       <div id="hero" class="flex flex-col lg:flex-row border-b border-purple-300 items-center justify-center">
@@ -32,7 +43,7 @@
           </h1>
         </div>
         <div class="border-l-1 border-y lg:border-x lg:border-y-0 border-purple-300 w-full lg:w-2/3 lg:max-w-240">
-          <img class="f-full object-contain" src="images/NG-V2.gif" />
+          <img class="w-full object-contain" src="images/NG-V2.gif" />
         </div>
       </div>
       <div
@@ -107,8 +118,8 @@
         <div class="flex justify-center gap-4 flex-wrap">
           <div
             id="fishwife_3"
-            class="flex bg-amber-50 w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3">
-            <div class="w-59 h-full border-r border-purple-300">
+            class="flex bg-amber-50 w-full max-w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3">
+            <div class="hidden sm:block w-59 shrink-0 h-full border-r border-purple-300">
               <img
                 src="images/press-hits/press hit_fishwife-3.png"
                 class="object-cover w-full h-full rounded-l-3xl"
@@ -126,16 +137,16 @@
                   >near-unanimous hit among our testers.”</span
                 >
               </p>
-              <a href="https://www.nytimes.com/wirecutter/reviews/best-tinned-fish/" target="_blank"><button
-                class="bg-slate-50 border border-purple-300 cursor-pointer text-black flex-grow absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+              <a href="https://www.nytimes.com/wirecutter/reviews/best-tinned-fish/" target="_blank"
+                class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
               >
                 READ MORE
-              </button></a>
+              </a>
             </div>
           </div>
           <div
             id="fishwife_4"
-            class="flex bg-amber-50 w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+            class="flex bg-amber-50 w-full max-w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
           >
             <div class="w-59 h-full border-r border-purple-300">
               <img
@@ -155,16 +166,16 @@
                 in partnership with Tsar Nicoulai, this California White
                 Sturgeon is sustainably harvested and 100% traceable.”
               </p>
-              <a href="https://www.foodandwine.com/best-tinned-gifts-8405002" target="_blank"><button
-                class="bg-slate-50 border border-purple-300 cursor-pointer text-black flex-grow absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+              <a href="https://www.foodandwine.com/best-tinned-gifts-8405002" target="_blank"
+                class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
               >
                 READ MORE
-              </button></a>
+              </a>
             </div>
           </div>
           <div
             id="little_sesame_1"
-            class="flex bg-amber-50 w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+            class="flex bg-amber-50 w-full max-w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
           >
             <div class="w-59 h-full border-r border-purple-300">
               <img
@@ -185,16 +196,16 @@
                   it’s store-bought."</span
                 >
               </p>
-              <a href="https://www.thekitchn.com/little-sesame-fly-by-jing-chili-crisp-hummus-review-23682325" target="_blank"><button
-                class="bg-slate-50 border border-purple-300 cursor-pointer text-black flex-grow absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+              <a href="https://www.thekitchn.com/little-sesame-fly-by-jing-chili-crisp-hummus-review-23682325" target="_blank"
+                class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
               >
                 READ MORE
-              </button></a>
+              </a>
             </div>
           </div>
           <div
             id="houseplant_1"
-            class="flex bg-amber-50 w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+            class="flex bg-amber-50 w-full max-w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
           >
             <div class="w-59 h-full border-r border-purple-300">
               <img
@@ -214,16 +225,16 @@
                 >
                 that looks like two stones stacked on top of each other.”
               </p>
-              <a href="https://www.latimes.com/lifestyle/image/story/2024-11-27/holiday-gift-guide" target="_blank"><button
-                class="bg-slate-50 border border-purple-300 cursor-pointer text-black flex-grow absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+              <a href="https://www.latimes.com/lifestyle/image/story/2024-11-27/holiday-gift-guide" target="_blank"
+                class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
               >
                 READ MORE
-              </button></a>
+              </a>
             </div>
           </div>
           <div
             id="graza_1"
-            class="flex bg-amber-50 w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+            class="flex bg-amber-50 w-full max-w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
           >
             <div class="w-59 h-full border-r border-purple-300">
               <img
@@ -245,16 +256,16 @@
                 squeeze-bottle forebears, were ‘engineered out of function,’
                 Benin says.”
               </p>
-              <a href="https://www.fastcompany.com/91121437/graza-olive-oil-beer-can-refill" target="_blank"><button
-                class="bg-slate-50 border border-purple-300 cursor-pointer text-black flex-grow absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+              <a href="https://www.fastcompany.com/91121437/graza-olive-oil-beer-can-refill" target="_blank"
+                class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
               >
                 READ MORE
-              </button></a>
+              </a>
             </div>
           </div>
           <div
             id="fishwife_1"
-            class="flex bg-amber-50 w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+            class="flex bg-amber-50 w-full max-w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
           >
             <div class="w-59 h-full border-r border-purple-300">
               <img
@@ -271,18 +282,18 @@
                 “Tinned fish summer is here! My two favorite brands –
                 <span class="font-semibold">Lisa Says Gah! and Fishwife</span>–
                 just revived last year’s famed tomato girl summer aesthetic and
-                spun it on its head.” >
+                spun it on its head.”
               </p>
-              <a href="https://www.brit.co/fishwife-lisa-says-gah/" target="_blank"><button
-                class="bg-slate-50 border border-purple-300 cursor-pointer text-black flex-grow absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+              <a href="https://www.brit.co/fishwife-lisa-says-gah/" target="_blank"
+                class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
               >
                 READ MORE
-              </button></a>
+              </a>
             </div>
           </div>
           <div
             id="chomps_1"
-            class="flex bg-amber-50 w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+            class="flex bg-amber-50 w-full max-w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
           >
             <div class="w-59 h-full border-r border-purple-300">
               <img
@@ -305,16 +316,16 @@
                   >Consider meat snack startup Chomps...”</span
                 >
               </p>
-              <a href="https://www.bloomberg.com/news/articles/2024-05-07/startups-poppi-and-chomps-can-avoid-the-food-startup-doldrums?srnd=undefined&sref=taxRtTxi" target="_blank"><button
-                class="bg-slate-50 border border-purple-300 cursor-pointer text-black flex-grow absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+              <a href="https://www.bloomberg.com/news/articles/2024-05-07/startups-poppi-and-chomps-can-avoid-the-food-startup-doldrums?srnd=undefined&sref=taxRtTxi" target="_blank"
+                class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
               >
                 READ MORE
-              </button></a>
+              </a>
             </div>
           </div>
           <div
             id="fishwife_2"
-            class="flex bg-amber-50 w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+            class="flex bg-amber-50 w-full max-w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
           >
             <div class="w-59 h-full border-r border-purple-300">
               <img
@@ -335,16 +346,16 @@
                 >
                 when Fishwife was launched in 2020.”
               </p>
-              <a href="https://www.glamour.com/story/the-glamour-100-the-best-stuff-to-buy-all-women-owned" target="_blank"><button
-                class="bg-slate-50 border border-purple-300 cursor-pointer text-black flex-grow absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+              <a href="https://www.glamour.com/story/the-glamour-100-the-best-stuff-to-buy-all-women-owned" target="_blank"
+                class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
               >
                 READ MORE
-              </button></a>
+              </a>
             </div>
           </div>
           <div
             id="heyday_1"
-            class="flex bg-amber-50 w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+            class="flex bg-amber-50 w-full max-w-111 h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
           >
             <div class="w-59 h-full border-r border-purple-300">
               <img
@@ -365,11 +376,11 @@
                 They're an easy, healthy, and delish meal for those nights when
                 you just cannot muster up the energy to cook.”
               </p>
-              <a href="https://www.realsimple.com/work-life/life-strategies/smart-finds" target="_blank"><button
-                class="bg-slate-50 border border-purple-300 cursor-pointer text-black flex-grow absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+              <a href="https://www.realsimple.com/work-life/life-strategies/smart-finds" target="_blank"
+                class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
               >
                 READ MORE
-              </button></a>
+              </a>
             </div>
           </div>
         </div>
@@ -380,15 +391,15 @@
       >
         <h2 class="text-center text-orange-600 text-4xl/12 lg:text-5xl/15 xl:text-5xl/17">LOVE LETTERS</h2>
 
-        <div class="flex flex-wrap items-start justify-center gap-8 relative mx-30">
-            <img src="images/FISH.png" class="absolute -top-55 -right-70 h-80" />
-            <img src="images/JAM.png" class="absolute top-30 -left-78 h-105" />
-            <img src="images/CUP.png" class="absolute bottom-55 -right-80 h-70" />
-            <img src="images/OLIVEOIL.png" class="absolute -bottom-70 -left-60 h-120" />
+        <div class="flex flex-wrap items-start justify-center gap-8 relative mx-4 lg:mx-30 overflow-hidden lg:overflow-visible">
+            <img src="images/FISH.png" class="hidden lg:block absolute -top-55 -right-70 h-80" />
+            <img src="images/JAM.png" class="hidden lg:block absolute top-30 -left-78 h-105" />
+            <img src="images/CUP.png" class="hidden lg:block absolute bottom-55 -right-80 h-70" />
+            <img src="images/OLIVEOIL.png" class="hidden lg:block absolute -bottom-70 -left-60 h-120" />
           <div class="flex flex-col gap-8">
             <div
               id="becca-millstein"
-              class="flex flex-col bg-amber-50 w-106 border border-purple-300 rounded-3xl items-center text-center px-9 py-10 gap-4 hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+              class="flex flex-col bg-amber-50 w-full max-w-106 border border-purple-300 rounded-3xl items-center text-center px-9 py-10 gap-4 hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
             >
               <img src="images/stars.svg" class="h-6" />
               <p class="text-xl text-slate-800 font-light">
@@ -405,7 +416,7 @@
             </div>
             <div
               id="david-salazar"
-              class="flex flex-col bg-amber-50 w-106 border border-purple-300 rounded-3xl items-center text-center px-9 py-10 gap-4 hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+              class="flex flex-col bg-amber-50 w-full max-w-106 border border-purple-300 rounded-3xl items-center text-center px-9 py-10 gap-4 hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
             >
               <img src="images/stars.svg" class="h-6" />
               <p class="text-xl text-slate-800 font-light">
@@ -424,7 +435,7 @@
           <div class="flex flex-col gap-8">
             <div
               id="hannah-baker"
-              class="flex flex-col bg-amber-50 w-106 border border-purple-300 rounded-3xl items-center text-center px-9 py-10 gap-4 hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+              class="flex flex-col bg-amber-50 w-full max-w-106 border border-purple-300 rounded-3xl items-center text-center px-9 py-10 gap-4 hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
             >
               <img src="images/stars.svg" class="h-6" />
               <p class="text-xl text-slate-800 font-light">
@@ -443,8 +454,8 @@
               </h3>
             </div>
             <div
-              id="david-salazar"
-              class="flex flex-col bg-amber-50 w-106 border border-purple-300 rounded-3xl items-center text-center px-9 py-10 gap-4 hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
+              id="kali-shulklapper"
+              class="flex flex-col bg-amber-50 w-full max-w-106 border border-purple-300 rounded-3xl items-center text-center px-9 py-10 gap-4 hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3"
             >
               <img src="images/stars.svg" class="h-6" />
               <p class="text-xl text-slate-800 font-light">
@@ -465,7 +476,7 @@
         id="lets_chat"
         class="flex flex-col items-center justify-center py-20 px-14 gap-10"
       >
-        <div class="flex items-center justify-center w-24 y-24">
+        <div class="flex items-center justify-center w-24 h-24">
             <img src="images/lets-chat.svg">
         </div>
         <h2 class="text-center text-indigo-600 text-4xl/12 lg:text-5xl/15 xl:text-5xl/17">LET'S CHAT ABOUT</h2>
@@ -480,9 +491,12 @@
             <p>consulting</p>
         </div>
         <div class="flex items-center justify-center gap-5">
-            <a href="" target="_blank"><div class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900">
-                <img src="images/email.svg" alt="email" class="h-6 w-6">
-            </div></a>
+            <div class="relative">
+              <button id="copy_email" onclick="navigator.clipboard.writeText('nicole@ng-pr.com').then(function(){var t=document.getElementById('copy_toast');t.classList.remove('hidden');setTimeout(function(){t.classList.add('hidden')},2000)})" title="Copy email" class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900 cursor-pointer border-none">
+                <img src="images/email.svg" alt="Copy email address" class="h-6 w-6">
+              </button>
+              <span id="copy_toast" class="hidden absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-xs rounded px-2 py-1 whitespace-nowrap">Copied!</span>
+            </div>
             <a href="https://www.linkedin.com/in/nicolegreco1/" target="_blank"><div class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900">
                 <img src="images/linkedin.svg" alt="linkedin" class="h-6 w-6">
             </div></a>

@@ -5,8 +5,8 @@ html {
 @font-face {
   font-family: "tan-meringue";
   src:
-    url("fonts/tan-meringue-webfont.woff2") format("woff2"),
-    url("fonts/tan-meringue-webfont.woff") format("woff");
+    url("../fonts/tan-meringue-webfont.woff2") format("woff2"),
+    url("../fonts/tan-meringue-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
