@@ -1,0 +1,103 @@
+[
+  {
+    "id": "fishwife_3",
+    "brand": "Fishwife",
+    "logoImage": "/images/marquee/fishwife_logo.png",
+    "pressImage": "/images/press-hits/press-hit_fishwife-3.png",
+    "headline": "Fishwife in Wirecutter",
+    "quote": "\"We thought the Slow Smoked Mackerel with Chili Flakes was most successful. It was a",
+    "quoteHighlight": "near-unanimous hit among our testers.\"",
+    "url": "https://www.nytimes.com/wirecutter/reviews/best-tinned-fish/",
+    "hideImageOnMobile": true
+  },
+  {
+    "id": "fishwife_4",
+    "brand": "Fishwife",
+    "logoImage": "/images/marquee/fishwife_logo.png",
+    "pressImage": "/images/press-hits/press-hit_fishwife-4.png",
+    "headline": "Fishwife in Food & Wine",
+    "headlineClass": "pr-2",
+    "quote": "\"Editor-loved brand Fishwife recently dipped into the luxury category with their",
+    "quoteHighlight": "first caviar product.",
+    "quoteSuffix": " Created in partnership with Tsar Nicoulai, this California White Sturgeon is sustainably harvested and 100% traceable.\"",
+    "url": "https://www.foodandwine.com/best-tinned-gifts-8405002"
+  },
+  {
+    "id": "little_sesame_1",
+    "brand": "Little Sesame",
+    "logoImage": "/images/marquee/logo_little-sesame.png",
+    "pressImage": "/images/press-hits/press-hit_little-sesame-1.png",
+    "headline": "Little Sesame in The Kitchn",
+    "quote": "\"I've tried plenty of different kinds of hummus over the years, and with exception to the homemade stuff,",
+    "quoteHighlight": "this is the most creamy and tasty one I've ever tried — and it's store-bought.\"",
+    "url": "https://www.thekitchn.com/little-sesame-fly-by-jing-chili-crisp-hummus-review-23682325"
+  },
+  {
+    "id": "houseplant_1",
+    "brand": "Houseplant",
+    "logoImage": "/images/marquee/logo_houseplant.png",
+    "pressImage": "/images/press-hits/press-hit_houseplant-1.png",
+    "headline": "Houseplant in The LA Times",
+    "quote": "\"Keep your matches handy and organized with this",
+    "quoteHighlight": "multi-purpose pebble match strike",
+    "quoteSuffix": " that looks like two stones stacked on top of each other.\"",
+    "url": "https://www.latimes.com/lifestyle/image/story/2024-11-27/holiday-gift-guide"
+  },
+  {
+    "id": "graza_1",
+    "brand": "Graza",
+    "logoImage": "/images/marquee/logo_graza.png",
+    "pressImage": "/images/press-hits/press-hit_graza-1.png",
+    "headline": "Graza in Fast Company",
+    "headlineClass": "pr-2",
+    "quote": "\"With enough whimsy to",
+    "quoteHighlight": "stand out against a sea of dark-glass bottles",
+    "quoteSuffix": " of olive oil on store shelves, the cans, like their squeeze-bottle forebears, were 'engineered out of function,' Benin says.\"",
+    "url": "https://www.fastcompany.com/91121437/graza-olive-oil-beer-can-refill"
+  },
+  {
+    "id": "fishwife_1",
+    "brand": "Fishwife",
+    "logoImage": "/images/marquee/fishwife_logo.png",
+    "pressImage": "/images/press-hits/press-hit_fishwife-1.png",
+    "headline": "Fishwife in Brit+Co",
+    "quote": "\"Tinned fish summer is here! My two favorite brands –",
+    "quoteHighlight": "Lisa Says Gah! and Fishwife",
+    "quoteSuffix": "– just revived last year's famed tomato girl summer aesthetic and spun it on its head.\"",
+    "url": "https://www.brit.co/fishwife-lisa-says-gah/"
+  },
+  {
+    "id": "chomps_1",
+    "brand": "Chomps",
+    "logoImage": "/images/marquee/logo_chomps.png",
+    "pressImage": "/images/press-hits/press-hit_chomps-1.png",
+    "headline": "Chomps in Bloomberg",
+    "quote": "\"I'd argue this is a moment for smart food startups to",
+    "quoteHighlight": "double-down on what they do best",
+    "quoteSuffix": "—producing great-tasting, healthier foods and actually make money doing it. <span class=\"font-semibold\">Consider meat snack startup Chomps...\"</span>",
+    "url": "https://www.bloomberg.com/news/articles/2024-05-07/startups-poppi-and-chomps-can-avoid-the-food-startup-doldrums?srnd=undefined&sref=taxRtTxi"
+  },
+  {
+    "id": "fishwife_2",
+    "brand": "Fishwife",
+    "logoImage": "/images/marquee/fishwife_logo.png",
+    "pressImage": "/images/press-hits/press-hit_fishwife-2.png",
+    "headline": "Fishwife in Glamour",
+    "headlineClass": "pr-4",
+    "quote": "\"Tinned fish was a quarantine staple for Becca Millstein, who was",
+    "quoteHighlight": "intent on elevating canned seafood",
+    "quoteSuffix": " when Fishwife was launched in 2020.\"",
+    "url": "https://www.glamour.com/story/the-glamour-100-the-best-stuff-to-buy-all-women-owned"
+  },
+  {
+    "id": "heyday_1",
+    "brand": "Heyday Canning Co.",
+    "logoImage": "/images/marquee/logo_heyday.png",
+    "pressImage": "/images/press-hits/press-hit_heyday-1.png",
+    "headline": "Heyday Canning Co. in Real Simple",
+    "quote": "\"These are, without a doubt,",
+    "quoteHighlight": "the best canned beans I've ever had.",
+    "quoteSuffix": " They're an easy, healthy, and delish meal for those nights when you just cannot muster up the energy to cook.\"",
+    "url": "https://www.realsimple.com/work-life/life-strategies/smart-finds"
+  }
+]

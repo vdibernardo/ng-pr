@@ -1,0 +1,12 @@
+[
+  { "name": "Fishwife", "image": "/images/marquee/fishwife_logo.png" },
+  { "name": "Graza", "image": "/images/marquee/logo_graza.png" },
+  { "name": "Little Sesame", "image": "/images/marquee/logo_little-sesame.png" },
+  { "name": "Nomadica", "image": "/images/marquee/logo_nomadica.png" },
+  { "name": "Houseplant", "image": "/images/marquee/logo_houseplant.png" },
+  { "name": "Chomps", "image": "/images/marquee/logo_chomps.png" },
+  { "name": "Ipsa", "image": "/images/marquee/logo_ipsa.png" },
+  { "name": "Carbone", "image": "/images/marquee/logo_carbone.png" },
+  { "name": "Summer Water", "image": "/images/marquee/logo_summer-water.png" },
+  { "name": "HeyDay", "image": "/images/marquee/logo_heyday.png" }
+]
