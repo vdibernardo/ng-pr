@@ -1,0 +1,45 @@
+<nav id="nav" class="relative border-b border-purple-300">
+  <div class="flex h-22 flex-grow sm:justify-between justify-between items-center px-6 sm:px-14">
+    <div class="flex items-center h-6 w-auto">
+      <h2 class="text-center text-orange-600 text-2xl">NGPR</h2>
+    </div>
+    <button
+      id="hamburger"
+      class="sm:hidden flex flex-col justify-center gap-1.5 cursor-pointer w-8 h-8"
+    >
+      <span class="block w-6 h-0.5 bg-indigo-500"></span>
+      <span class="block w-6 h-0.5 bg-indigo-500"></span>
+      <span class="block w-6 h-0.5 bg-indigo-500"></span>
+    </button>
+    <ul class="hidden sm:flex justify-end gap-12 text-lg font-light">
+      <li><a href="#extra_extra" class="text-indigo-500">press</a></li>
+      <li><a href="#love_letters" class="text-indigo-500">testimonials</a></li>
+      <li><a href="#lets_chat" class="text-indigo-500">contact</a></li>
+    </ul>
+  </div>
+  <ul
+    id="mobile_menu"
+    class="hidden flex-col items-center gap-6 py-6 text-lg font-light border-t border-purple-300 bg-indigo-50"
+  >
+    <li><a href="#extra_extra" class="text-indigo-500 mobile-nav-link">press</a></li>
+    <li><a href="#love_letters" class="text-indigo-500 mobile-nav-link">testimonials</a></li>
+    <li><a href="#lets_chat" class="text-indigo-500 mobile-nav-link">contact</a></li>
+  </ul>
+</nav>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobile_menu");
+
+  hamburger?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("hidden");
+    mobileMenu?.classList.toggle("flex");
+  });
+
+  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu?.classList.add("hidden");
+      mobileMenu?.classList.remove("flex");
+    });
+  });
+</script>
