@@ -1,0 +1,56 @@
+---
+interface Props {
+  id: string;
+  logoImage: string;
+  pressImage: string;
+  headline: string;
+  headlineClass?: string;
+  quote: string;
+  quoteHighlight: string;
+  quoteSuffix?: string;
+  url: string;
+  hideImageOnMobile?: boolean;
+}
+
+const {
+  id,
+  logoImage,
+  pressImage,
+  headline,
+  headlineClass = "",
+  quote,
+  quoteHighlight,
+  quoteSuffix = "",
+  url,
+  hideImageOnMobile = false,
+} = Astro.props;
+
+---
+
+<div
+  id={id}
+  class="flex flex-col sm:flex-row bg-amber-50 w-full max-w-111 sm:h-78 border border-purple-300 rounded-3xl hover:shadow-[12px_12px_4px_#CDD4FA] hover:-translate-3 overflow-hidden"
+>
+  <div class="max-h-80 sm:max-h-none sm:h-full sm:w-59 shrink-0 sm:border-r border-b sm:border-b-0 border-purple-300 overflow-hidden">
+    <img
+      src={pressImage}
+      class="w-full h-auto sm:h-full sm:object-cover rounded-t-3xl sm:rounded-t-none sm:rounded-l-3xl"
+      alt=""
+    />
+  </div>
+  <div class="flex flex-col justify-left items-start p-4 pb-16 w-full sm:w-71 relative flex-1 min-h-56 sm:min-h-0">
+    <img src={logoImage} class="h-10" alt="" />
+    <h3 class:list={["text-2xl/7 my-1", headlineClass]}>{headline}</h3>
+    <p class="text-xs text-slate-800 my-1 font-light">
+      <Fragment set:html={`${quote} <span class="font-semibold">${quoteHighlight}</span>${quoteSuffix}`} />
+    </p>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bg-slate-50 border border-purple-300 cursor-pointer text-black text-center absolute bottom-4 left-4 right-4 hover:bg-lime-300 hover:text-indigo-600 rounded-full px-4 py-2 mt-4"
+    >
+      READ MORE
+    </a>
+  </div>
+</div>
