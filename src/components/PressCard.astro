@@ -12,7 +12,6 @@ interface Props {
   headlineClass?: string;
   quote: QuoteSegment[];
   url: string;
-  hideImageOnMobile?: boolean;
 }
 
 const {
@@ -23,7 +22,6 @@ const {
   headlineClass = "",
   quote,
   url,
-  hideImageOnMobile = false,
 } = Astro.props;
 ---
 
