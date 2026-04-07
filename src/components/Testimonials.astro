@@ -14,10 +14,10 @@ const columnB = testimonials.slice(half);
   <h2 class="text-center text-orange-600 text-4xl/12 lg:text-5xl/15 xl:text-5xl/17">LOVE LETTERS</h2>
 
   <div class="flex flex-wrap items-start justify-center gap-8 relative mx-4 lg:mx-30 overflow-hidden lg:overflow-visible">
-    <img src="/images/FISH.png" class="hidden lg:block absolute -top-55 -right-70 h-80" alt="" />
-    <img src="/images/JAM.png" class="hidden lg:block absolute top-30 -left-78 h-105" alt="" />
-    <img src="/images/CUP.png" class="hidden lg:block absolute bottom-55 -right-80 h-70" alt="" />
-    <img src="/images/OLIVEOIL.png" class="hidden lg:block absolute -bottom-70 -left-60 h-120" alt="" />
+    <img src="/images/FISH.png" loading="lazy" decoding="async" class="hidden lg:block absolute -top-55 -right-70 h-80" alt="" />
+    <img src="/images/JAM.png" loading="lazy" decoding="async" class="hidden lg:block absolute top-30 -left-78 h-105" alt="" />
+    <img src="/images/CUP.png" loading="lazy" decoding="async" class="hidden lg:block absolute bottom-55 -right-80 h-70" alt="" />
+    <img src="/images/OLIVEOIL.png" loading="lazy" decoding="async" class="hidden lg:block absolute -bottom-70 -left-60 h-120" alt="" />
     <div class="flex flex-col gap-8">
       {columnA.map((testimonial) => <TestimonialCard {...testimonial} />)}
     </div>
