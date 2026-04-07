@@ -5,12 +5,18 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "check": "astro check"
   },
   "dependencies": {
-    "astro": "^5.7.0",
     "@astrojs/netlify": "^6.3.0",
+    "@fontsource-variable/manrope": "^5.2.8",
     "@tailwindcss/vite": "^4.1.0",
+    "astro": "^5.7.0",
     "tailwindcss": "^4.1.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.8",
+    "typescript": "^5.9.3"
   }
 }

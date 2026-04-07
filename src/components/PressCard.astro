@@ -1,15 +1,17 @@
 ---
+interface QuoteSegment {
+  text: string;
+  bold?: boolean;
+}
+
 interface Props {
   id: string;
   logoImage: string;
   pressImage: string;
   headline: string;
   headlineClass?: string;
-  quote: string;
-  quoteHighlight: string;
-  quoteSuffix?: string;
+  quote: QuoteSegment[];
   url: string;
-  hideImageOnMobile?: boolean;
 }
 
 const {
@@ -19,12 +21,8 @@ const {
   headline,
   headlineClass = "",
   quote,
-  quoteHighlight,
-  quoteSuffix = "",
   url,
-  hideImageOnMobile = false,
 } = Astro.props;
-
 ---
 
 <div
@@ -42,7 +40,9 @@ const {
     <img src={logoImage} class="h-10" alt="" />
     <h3 class:list={["text-2xl/7 my-1", headlineClass]}>{headline}</h3>
     <p class="text-xs text-slate-800 my-1 font-light">
-      <Fragment set:html={`${quote} <span class="font-semibold">${quoteHighlight}</span>${quoteSuffix}`} />
+      {quote.map((segment) =>
+        segment.bold ? <span class="font-semibold">{segment.text}</span> : segment.text
+      )}
     </p>
     <a
       href={url}
