@@ -5,6 +5,10 @@
     </div>
     <button
       id="hamburger"
+      type="button"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile_menu"
       class="sm:hidden flex flex-col justify-center gap-1.5 cursor-pointer w-8 h-8"
     >
       <span class="block w-6 h-0.5 bg-indigo-500"></span>
@@ -31,15 +35,18 @@
   const hamburger = document.getElementById("hamburger");
   const mobileMenu = document.getElementById("mobile_menu");
 
+  const setMenuOpen = (open: boolean) => {
+    mobileMenu?.classList.toggle("hidden", !open);
+    mobileMenu?.classList.toggle("flex", open);
+    hamburger?.setAttribute("aria-expanded", String(open));
+  };
+
   hamburger?.addEventListener("click", () => {
-    mobileMenu?.classList.toggle("hidden");
-    mobileMenu?.classList.toggle("flex");
+    const isOpen = !mobileMenu?.classList.contains("hidden");
+    setMenuOpen(!isOpen);
   });
 
   document.querySelectorAll(".mobile-nav-link").forEach((link) => {
-    link.addEventListener("click", () => {
-      mobileMenu?.classList.add("hidden");
-      mobileMenu?.classList.remove("flex");
-    });
+    link.addEventListener("click", () => setMenuOpen(false));
   });
 </script>
