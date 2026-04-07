@@ -1,6 +1,9 @@
 ---
 import services from "../data/services.json";
 import CopyEmailButton from "./CopyEmailButton.astro";
+import letsChatIcon from "../assets/icons/lets-chat.svg";
+import linkedinIcon from "../assets/icons/linkedin.svg";
+import instagramIcon from "../assets/icons/instagram.svg";
 ---
 
 <div
@@ -8,7 +11,7 @@ import CopyEmailButton from "./CopyEmailButton.astro";
   class="flex flex-col items-center justify-center py-20 px-14 gap-10"
 >
   <div class="flex items-center justify-center w-24 h-24">
-    <img src="/images/lets-chat.svg" alt="" />
+    <img src={letsChatIcon.src} alt="" />
   </div>
   <h2 class="text-center text-indigo-600 text-4xl/12 lg:text-5xl/15 xl:text-5xl/17">LET'S CHAT ABOUT</h2>
   <div class="flex flex-col justify-center items-center gap-3 text-center text-2xl font-light text-slate-900">
@@ -20,12 +23,12 @@ import CopyEmailButton from "./CopyEmailButton.astro";
     <CopyEmailButton />
     <a href="https://www.linkedin.com/in/nicolegreco1/" target="_blank" rel="noopener noreferrer">
       <div class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900">
-        <img src="/images/linkedin.svg" alt="LinkedIn" class="h-6 w-6" />
+        <img src={linkedinIcon.src} alt="LinkedIn" class="h-6 w-6" />
       </div>
     </a>
     <a href="https://www.instagram.com/nikk.greco/" target="_blank" rel="noopener noreferrer">
       <div class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900">
-        <img src="/images/instagram.svg" alt="Instagram" class="h-6 w-6" />
+        <img src={instagramIcon.src} alt="Instagram" class="h-6 w-6" />
       </div>
     </a>
   </div>

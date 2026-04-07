@@ -1,3 +1,7 @@
+---
+import emailIcon from "../assets/icons/email.svg";
+---
+
 <div class="relative">
   <button
     id="copy_email"
@@ -6,7 +10,7 @@
     aria-label="Copy email address"
     class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900 cursor-pointer border-none"
   >
-    <img src="/images/email.svg" alt="" class="h-6 w-6" />
+    <img src={emailIcon.src} alt="" class="h-6 w-6" />
   </button>
   <span
     id="copy_toast"
