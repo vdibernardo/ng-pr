@@ -1,13 +1,17 @@
 <div class="relative">
   <button
     id="copy_email"
-    title="Copy email"
+    type="button"
+    title="Copy email address"
+    aria-label="Copy email address"
     class="flex items-center justify-center h-9 w-9 rounded-full bg-indigo-600 hover:bg-indigo-900 cursor-pointer border-none"
   >
-    <img src="/images/email.svg" alt="Copy email address" class="h-6 w-6" />
+    <img src="/images/email.svg" alt="" class="h-6 w-6" />
   </button>
   <span
     id="copy_toast"
+    role="status"
+    aria-live="polite"
     class="hidden absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-xs rounded px-2 py-1 whitespace-nowrap"
   >
     Copied!
@@ -15,15 +19,19 @@
 </div>
 
 <script>
+  const EMAIL = "nicole@ng-pr.com";
   const btn = document.getElementById("copy_email");
   const toast = document.getElementById("copy_toast");
 
-  btn?.addEventListener("click", () => {
-    navigator.clipboard.writeText("nicole@ng-pr.com").then(() => {
+  btn?.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
       toast?.classList.remove("hidden");
-      setTimeout(() => {
-        toast?.classList.add("hidden");
-      }, 2000);
-    });
+      setTimeout(() => toast?.classList.add("hidden"), 2000);
+    } catch {
+      // Clipboard API unavailable (insecure context, denied permission,
+      // older browser). Fall back to opening the user's mail client.
+      window.location.href = `mailto:${EMAIL}`;
+    }
   });
 </script>
