@@ -1,6 +1,10 @@
 ---
 import testimonials from "../data/testimonials.json";
 import TestimonialCard from "./TestimonialCard.astro";
+
+const half = Math.ceil(testimonials.length / 2);
+const columnA = testimonials.slice(0, half);
+const columnB = testimonials.slice(half);
 ---
 
 <div
@@ -15,12 +19,10 @@ import TestimonialCard from "./TestimonialCard.astro";
     <img src="/images/CUP.png" class="hidden lg:block absolute bottom-55 -right-80 h-70" alt="" />
     <img src="/images/OLIVEOIL.png" class="hidden lg:block absolute -bottom-70 -left-60 h-120" alt="" />
     <div class="flex flex-col gap-8">
-      <TestimonialCard {...testimonials[0]} />
-      <TestimonialCard {...testimonials[1]} />
+      {columnA.map((testimonial) => <TestimonialCard {...testimonial} />)}
     </div>
     <div class="flex flex-col gap-8">
-      <TestimonialCard {...testimonials[2]} />
-      <TestimonialCard {...testimonials[3]} />
+      {columnB.map((testimonial) => <TestimonialCard {...testimonial} />)}
     </div>
   </div>
 </div>
